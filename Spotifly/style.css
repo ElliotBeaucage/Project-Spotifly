@@ -1,0 +1,128 @@
+body
+{
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    justify-content: center;
+}
+main
+{
+    background-color: rgb(53, 53, 53);
+    width: 1000px;
+    height: 890px;
+    bottom: 100px;
+    padding: 40px;
+    padding-top: 0;
+    display: flex;
+}
+h2,p
+{
+    color: #fff;
+}
+.spotify
+{
+    display: flex;
+    flex-direction: column;
+}
+.listmusic
+{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Pour permettre le défilement vertical */
+    overflow-x: hidden; /* Pour masquer le défilement horizontal, si nécessaire */
+    box-sizing: border-box;
+}
+
+.accueil a
+{
+    text-align: center;
+    color: rgb(181, 41, 41);
+    text-decoration: none;
+}
+.accueil
+{
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+}
+.lecteur
+{
+    display: none;
+    /* position: relative;
+    top: 50px;
+    left: 100px;
+    color: #fff;
+    background-color: rgb(181, 41, 41);
+    padding: 10px;
+    border: 2px solid white;
+    height: 800px;*/
+    position: relative; 
+    left: 40px;
+    bottom: 0;
+    width: 700px;
+    background-color: #333;
+    color: white;
+    padding: 60px;
+    height: 90%;
+    border-left: 3px solid red;
+    
+
+    
+}
+#play,#pause, .temps, .volume-control
+{
+    display: none;
+    
+}
+.logo
+{
+   
+    color: rgb(181,41,41);
+}
+
+.btn
+{
+    position: relative;
+    top: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(181, 41, 41);
+    border-radius: 10px;
+}
+.container-progress{
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+.progress
+{
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0%;
+    background-color: red;
+    border-radius: 5px;
+}
+#pause, #play
+{
+    width: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.input
+{
+    padding: 10px;
+    border-radius: 10px;
+    color: darkred;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.input:hover
+{
+    border: 3px solid darkred;
+}
+
